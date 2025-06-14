@@ -1,0 +1,151 @@
+/* General */
+body {
+    font-family: 'Savate', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Barra Superior */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 120px;
+}
+
+/* Barra Lateral Izquierda */
+.sidebar-left {
+    width: 200px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.avatar-container {
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.nickname {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.friends {
+    margin-top: 20px;
+}
+
+.friends h3 {
+    font-size: 18px;
+}
+
+.friend-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.friend-avatar:hover {
+    border: 2px solid #ecf0f1;
+}
+
+/* Feed en el Centro */
+.feed {
+    flex-grow: 1;
+    margin-left: 220px;
+    margin-right: 220px;
+    padding: 20px;
+}
+
+.feed-post {
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.feed-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.posted-time {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Barra Lateral Derecha (Reproductor de Música) */
+.sidebar-right {
+    width: 200px;
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    right: 0;
+    height: 100%;
+    top: 0;
+}
+
+.music-player {
+    text-align: center;
+}
+
+.controls button {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: #444;
+}
+
+.controls input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Barra Inferior */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
