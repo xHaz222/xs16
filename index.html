@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <link rel="icon" href="./favicon.ico">
+    <title>Xat Space - xHaz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Savate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra Superior -->
+        <header class="header">
+            <img src="https://xatimg.com/image/UUvRj74TSHQc.png" alt="Logo" class="logo">
+        </header>
+
+        <div class="main-content">
+            <!-- Barra Lateral Izquierda -->
+            <aside class="sidebar-left">
+                <div class="avatar-container">
+                    <img src="https://xatimg.com/image/lxuiZc4aicsb.png" alt="Avatar" class="avatar">
+                    <p class="nickname">˹ރ𝗛͟ᴀ͟ᴢי˼</p>
+                    <p>Estado: Desconocido</p>
+                    <p>Signo: Leo</p>
+                </div>
+                <div class="friends">
+                    <h3>AMIGOS:</h3>
+                    <ul>
+                        <li><img src="https://xatimg.com/image/O3YhXNz4ACb5.jpg" alt="Amigo 1" class="friend-avatar"> Amigo 1</li>
+                        <li><img src="https://xatimg.com/image/O3YhXNz4ACb5.jpg" alt="Amigo 2" class="friend-avatar"> Amigo 2</li>
+                        <li><img src="https://xatimg.com/image/O3YhXNz4ACb5.jpg" alt="Amigo 3" class="friend-avatar"> Amigo 3</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Feed en el Centro -->
+            <section class="feed">
+                <div class="feed-post">
+                    <p class="status">Estoy pensando...</p>
+                    <img src="https://xatimg.com/image/ryvlsWQjYBVL.jpg" alt="Foto 1" class="feed-image">
+                    <p class="posted-time">Publicado hace 5 segundos</p>
+                </div>
+                <div class="feed-post">
+                    <p class="status">Tengo esto en mente...</p>
+                    <img src="https://xatimg.com/image/9x4zNSF1yugj.jpg" alt="Foto 2" class="feed-image">
+                    <p class="posted-time">Publicado desde Iphone</p>
+                </div>
+                <div class="feed-post">
+                    <p class="status">Pensando en algo nuevo...</p>
+                    <img src="https://xatimg.com/image/HW1I20wKIFDF.jpg" alt="Foto 3" class="feed-image">
+                    <p class="posted-time">Publicado hace 1 minuto</p>
+                </div>
+            </section>
+
+            <!-- Barra Lateral Derecha (Reproductor de Música) -->
+            <aside class="sidebar-right">
+                <div class="music-player">
+                    <audio id="audioPlayer" controls></audio>
+                    <div class="controls">
+                        <button id="previousButton">⏮️</button>
+                        <button id="playPauseButton">⏯️</button>
+                        <button id="nextButton">⏭️</button>
+                        <input type="range" id="volumeControl" min="0" max="100" value="50">
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Barra Inferior -->
+        <footer class="footer">
+            <p>© 2025 Copyright - Xat Space - xHaz</p>
+        </footer>
+    </div>
+
+    <script src="musicPlayer.js"></script>
+</body>
+</html>
